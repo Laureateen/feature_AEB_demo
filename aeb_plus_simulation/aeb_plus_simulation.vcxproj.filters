@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pre_processor">
+      <UniqueIdentifier>{323f5fa1-7e26-417e-ac48-caf88da369cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="safety_margin">
+      <UniqueIdentifier>{47faed5e-b1e8-4906-b6dc-4e9429ecdf6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="treat_assessment">
+      <UniqueIdentifier>{3bf4a9a7-3529-4616-bccb-351b0309f999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="treat_assessment\include">
+      <UniqueIdentifier>{7e3be99b-9770-47c9-b904-9b01bb2787f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="treat_assessment\src">
+      <UniqueIdentifier>{15e08642-9838-437e-b8e0-4dc61df9cc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="safety_margin\include">
+      <UniqueIdentifier>{076c44f6-6151-41f5-b27d-ac5ea7bfe5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="safety_margin\src">
+      <UniqueIdentifier>{d82c7bb0-0d2d-49d0-80a2-a677fcb0757c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pre_processor\include">
+      <UniqueIdentifier>{ee8f57ec-dfc6-4aac-93ec-9887111fd2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pre_processor\src">
+      <UniqueIdentifier>{f3392ed8-725c-41cb-b183-04ac134f4ce0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\functions\pre_processor\include\vehicle_preprocessor.hpp">
+      <Filter>pre_processor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\functions\pre_processor\include\vehicle_self_data.h">
+      <Filter>pre_processor\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\functions\pre_processor\src\vehicle_preprocessor.cpp">
+      <Filter>pre_processor\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
