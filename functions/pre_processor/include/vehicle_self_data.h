@@ -10,6 +10,24 @@
 #define ALgtFiltParam3InAsyEvlrCritEve 0.097624f
 #define ALgtFiltParam4InAsyEvlrCritEve 0.94284f
 #define ALgtFiltParam5InAsyEvlrCritEve -0.33333f
+#define PinionAgRateFilConInAsyEvlrCritEve 0.200f
+#define SpdLimLoForChkPreBrkActvInAsyEvlrCritEve 5.56f
+
+
+
+typedef enum
+{
+	off,
+	on
+}OnOff1Vcc;
+
+typedef enum
+{
+	Ukwn,
+	Resd1,
+	ThreatMed,
+	ThreatHi
+}ReqSts1Vcc;
 
 typedef struct
 {
@@ -33,6 +51,7 @@ typedef struct
 	f32_t Accaceration_longitudinal_filtered_latetwocycle_mpss;
 	f32_t Accaceration_longitudinal_lateonecycle_mpss;
 	f32_t Accaceration_longitudinal_latetwocycle_mpss;
+	f32_t Filtered_PinionAngleRate_lateonecycle_radps;
 
 }VehSelf_old_t;
 
@@ -56,4 +75,19 @@ typedef struct
 	f32_t DynCalPrmForVehicleSpdForBicycleMdlCornrgStfn;
 
 }DynCalPrm_t;
+
+typedef struct
+{
+	f32_t DecelReq;
+	f32_t DamprReq;
+	f32_t DecelEna;
+	f32_t SteerAsEna;
+	f32_t CrsCnclReq;
+	f32_t StandStillReq;
+	f32_t BltLvl;
+	f32_t CllsnThreat;
+	f32_t SteerTqSgnReq;
+	f32_t SteerGainEna;
+
+}ActtnDataFromCMbB_t;
 

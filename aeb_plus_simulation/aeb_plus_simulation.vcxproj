@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Code\AEB_plus\functions\pre_processor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Code\feature_AEB_demo\functions\pre_processor\include;D:\Code\feature_AEB_demo\common_types;D:\Code\feature_AEB_demo\common_tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,11 +128,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\common_tools\common_tools.h" />
+    <ClInclude Include="..\common_types\common_types.h" />
     <ClInclude Include="..\functions\pre_processor\include\vehicle_preprocessor.hpp" />
     <ClInclude Include="..\functions\pre_processor\include\vehicle_self_data.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\functions\pre_processor\src\vehicle_preprocessor.cpp" />
+    <ClCompile Include="test_mian.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -12,4 +12,6 @@
 
 #define SqrtFloat(X) (f32_t) sqrtf((f32_t)(X))
 
+#define LimitsFloat(X, Xlow, Xup) (f32_t)((X) > (Xup) ? (Xup) : ((X) < (Xlow) ? (Xlow) : (X)))
+
 #endif

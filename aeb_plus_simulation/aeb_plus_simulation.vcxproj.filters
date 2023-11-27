@@ -28,6 +28,12 @@
     <Filter Include="pre_processor\src">
       <UniqueIdentifier>{f3392ed8-725c-41cb-b183-04ac134f4ce0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="common_tools">
+      <UniqueIdentifier>{3660369a-0c27-405f-bce4-16f35eb37468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_types">
+      <UniqueIdentifier>{49bc4dcb-37b7-4582-ba8a-96386657cb99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\functions\pre_processor\include\vehicle_preprocessor.hpp">
@@ -36,9 +42,18 @@
     <ClInclude Include="..\functions\pre_processor\include\vehicle_self_data.h">
       <Filter>pre_processor\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\common_types\common_types.h">
+      <Filter>common_types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_tools\common_tools.h">
+      <Filter>common_tools</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\functions\pre_processor\src\vehicle_preprocessor.cpp">
+      <Filter>pre_processor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_mian.cpp">
       <Filter>pre_processor\src</Filter>
     </ClCompile>
   </ItemGroup>
